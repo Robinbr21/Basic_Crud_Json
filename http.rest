@@ -1,0 +1,38 @@
+
+//for api testing using rest client
+
+GET http://localhost:8000/getbooks
+
+###
+GET   http://localhost:8000/bookbyid 
+content-type: application/json
+
+{
+    "id": "107"
+}
+
+###
+POST  http://localhost:8000/addnew 
+content-type: application/json
+
+{
+    "id": "110",
+    "name":"Docker"
+}
+
+###
+POST  http://localhost:8000/update 
+content-type: application/json
+
+{
+    "id": "105",
+    "name":"Docker"
+}
+
+###
+POST  http://localhost:8000/delete 
+content-type: application/json
+
+{
+    "id": "102"
+}
