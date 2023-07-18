@@ -82,6 +82,6 @@ exports.deleteing = async (req, res) => {
       return res.status(200).json({status:true, message: "succesfully deleted book details"})
     }
   } catch (error) {
-    console.log("ERROR ON update :",error);
+    console.log("ERROR ON Delete :",error);
   }
 };
